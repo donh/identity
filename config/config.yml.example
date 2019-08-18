@@ -1,0 +1,56 @@
+claim:
+  host: "https://example.com/api/v1/resolve/"
+database:
+  account: "user"
+  database: "identity"
+  hostname: "example.com"
+  password: "password_example"
+  port: 3306
+email:
+  account: "email_sender"
+  content: "Hi,<br /><br />Thank you for signing up.<br /><br />We noticed that you haven't verified your email yet. Please complete your account set-up by verifying your email.<br /><br />"
+  domain: "smtp.example.com"
+  password: "Please confirm your email"
+  port: 465
+  recipient: "email_recipient@example.com"
+  regard: "<br /><br />Best Regards,<br /><br />Example Inc."
+  sender: "email_sender@example.com"
+  subject: "Please confirm your email"
+Ethereum: #privateKey is in Ethereum form
+-
+  address: "address"
+  DID: "did:erc725:ropsten:address"
+  privateKey: "privateKey"
+-
+  address: "address"
+  DID: ""
+  privateKey: "privateKey"
+-
+  address: "address"
+  DID: ""
+  privateKey: "privateKey"
+JWT: "JWT"
+NaCl:
+  recipient: #privateKey is in NaCl form.
+    DID: "did:erc725:ropsten:address"
+    privateKey: "privateKey"
+    publicKey: "publicKey"
+  sender:
+    DID: "did:erc725:ropsten:address"
+    privateKey: "privateKey"
+    publicKey: "publicKey"
+port: 8080
+user:
+  address: "address"
+  birthday: "1970-08-31"
+  city: "Los Angeles"
+  country: "USA"
+  email: "user@example.com"
+  firstName: "Joe"
+  lastName: "Smith"
+  passport: "data:image/png;base64,picturecode"
+  phone: "3105601051"
+  publicKey: "publicKey"
+timeout: 86400
+websocket:
+  UUID: "UUID"
